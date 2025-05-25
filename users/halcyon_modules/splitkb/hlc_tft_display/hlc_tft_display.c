@@ -9,6 +9,7 @@
 // Fonts mono2
 #include "graphics/fonts/Retron2000-27.qff.h"
 #include "graphics/fonts/Retron2000-underline-27.qff.h"
+#include "graphics/fonts/symbol.qgf.h"
 
 // Numbers mono2
 #include "graphics/numbers/0.qgf.h"
@@ -206,7 +207,7 @@ void update_display(void) {
             qp_drawimage_recolor(lcd_surface, 5, 5, layer_number, HSV_LAYER_0, HSV_BLACK);
             break;
         case 1:
-            layer_number = qp_load_image_mem(gfx_1);
+            layer_number = qp_load_image_mem(gfx_symbol);
             qp_drawimage_recolor(lcd_surface, 5, 5, layer_number, HSV_LAYER_1, HSV_BLACK);
             break;
         case 2:
